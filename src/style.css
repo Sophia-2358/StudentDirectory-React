@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+    font-weight: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Header Style */
+#headerContainer > h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+#headerContainer > small{
+    font-size: 1em;
+    font-weight: 200;
+    color: black;
+}
+#headerContainer {
+    border: 1px solid rgb(74, 121, 230);
+    background-color: aliceblue;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px rgba(0, 59, 199, 0.5);
+    text-align: center;
+}
+#formContainer {
+    border: 1px solid rgb(74, 121, 230);
+    background-color: aliceblue;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 3px 10px rgba(0, 59, 199, 0.5);
+    text-align: left;
+}
+#formContainer > #studentForm > .input-field{
+    display: flex;
+    flex-direction: column;
+}
+#formContainer > #studentForm > .input-field > input{
+    padding: 10px;
+    text-align: left;
+    margin: 10px;
+}
+#formContainer button{
+    flex-grow: 1;
+    border: 1px solid rgb(74, 121, 230);
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px
+}
+#studentList > .list-item{
+    background-color: aliceblue;
+    border: 1px solid #2d78da;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+    box-shadow: 5px 3px 10px rgba(0, 59, 199, 0.5);
+}
+#studentList > .list-item > button{
+    flex-grow: 1;
+    border: 1px solid rgb(74, 121, 230);
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px
+}
+
+#studentList{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+@media (width <= 320px){
+    #studentList > .list-item{
+        grid-column: span 12;
+    }
+}
+
+@media (width <= 1000px){
+    #studentList > .list-item{
+        grid-column: span 2;
+    }
+}
+
+@media (width <= 320px) and (width <= 1000px){
+    #studentList > .list-item{
+        grid-column: span 4;
+    }
+}
