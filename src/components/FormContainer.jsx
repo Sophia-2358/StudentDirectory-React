@@ -1,5 +1,6 @@
-const FormComponent = () =>{
+const FormContainer = () =>{
     return (
+        <>
         <section id="formContainer"> 
             <form id ="studentForm">
                 <div className="input-field">
@@ -15,7 +16,8 @@ const FormComponent = () =>{
                 </div>
             </form>
         </section>
+        </>
     )
 }
 
-export default FormComponent;
+export default FormContainer;
