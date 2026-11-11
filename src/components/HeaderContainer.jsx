@@ -1,4 +1,4 @@
-const HeaderComponent = () =>{
+const HeaderContainer = () =>{
     return (
         <>
             <section id="headerContainer"> 
@@ -9,4 +9,4 @@ const HeaderComponent = () =>{
     )
 }
 
-export default HeaderComponent;
+export default HeaderContainer;
